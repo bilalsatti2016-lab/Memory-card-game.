@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Memory match game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memory Match</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="deco" aria-hidden="true">
+    <span style="left:6%;top:12%;animation-delay:-1s">✨</span>
+    <span style="left:88%;top:8%;animation-delay:-3s">🎈</span>
+    <span style="left:14%;top:48%;animation-delay:-5s">⭐</span>
+    <span style="left:92%;top:40%;animation-delay:-2s">🌈</span>
+    <span style="left:5%;top:82%;animation-delay:-4s">🎲</span>
+    <span style="left:80%;top:85%;animation-delay:-6s">✨</span>
+    <span style="left:48%;top:92%;animation-delay:-1.5s">🧩</span>
+    <span style="left:50%;top:3%;animation-delay:-3.5s">⭐</span>
+  </div>
+
+  <h1>🧠 Memory Match</h1>
+
+  <div class="bar">
+    <label>Size
+      <select id="size">
+        <option value="2x3">2 × 3 (tiny)</option>
+        <option value="3x4">3 × 4 (easy)</option>
+        <option value="4x4" selected>4 × 4</option>
+        <option value="4x5">4 × 5</option>
+        <option value="5x6">5 × 6</option>
+        <option value="6x6">6 × 6</option>
+        <option value="6x7">6 × 7</option>
+        <option value="7x8">7 × 8</option>
+        <option value="8x8">8 × 8 (expert)</option>
+      </select>
+    </label>
+    <span class="stat">Moves: <strong id="moves">0</strong></span>
+    <span class="stat">Time: <strong id="time">0:00</strong></span>
+    <span class="stat">Best: <strong id="best">–</strong></span>
+    <button id="restart">New Game</button>
+    <button id="theme" aria-label="Toggle dark or light mode"></button>
+  </div>
+
+  <div class="board" id="board" role="grid" aria-label="Memory cards"></div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <h2>🎉 You won!</h2>
+      <p id="summary"></p>
+      <button id="again">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
